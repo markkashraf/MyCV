@@ -1,0 +1,1 @@
+copy "MyCv.pdf" "G:/My Drive/CV/"
