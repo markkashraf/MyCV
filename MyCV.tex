@@ -122,23 +122,22 @@
 
 
 
-%------RELEVANT COURSEWORK-------
-\section{Relevant Coursework}
-%\resumeSubHeadingListStart
-\begin{multicols}{4}
-  \begin{itemize}[itemsep=-5pt, parsep=3pt]
-    \item\small ASP.NET MVC \& API
-    \item Entity Framework Core
-    \item LINQ
-    \item ADO.NET
-    \item SQL Server
-    \item TypeScript
-    \item JavaScript
-    
-  \end{itemize}
-\end{multicols}
-\vspace*{2.0\multicolsep}
-%\resumeSubHeadingListEnd
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+% %\resumeSubHeadingListStart
+% \begin{multicols}{4}
+%   \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%     \item\small ASP.NET MVC \& API
+%     \item Entity Framework Core
+%     \item LINQ
+%     \item ADO.NET
+%     \item SQL Server
+%     \item TypeScript
+%     \item JavaScript
+%   \end{itemize}
+% \end{multicols}
+% \vspace*{2.0\multicolsep}
+% %\resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
@@ -167,8 +166,18 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{BackEnd}{: C\#, ASP.NET Core (MVC, Web API), Entity Framework Core, LINQ, SQL Server, Database Design, Query Optimization } \\
-     \textbf{Other Technical Proficiencies}{: Linux ,Git, REST APIs, Agile, Unit Testing (NUnit/xUnit), Azure.} \\
+     \textbf{Other Technical Proficiencies}{: Linux,Git, REST APIs, Agile, Unit Testing (NUnit/xUnit)} \\
     }}
+
+    \textbf{Architecture & design}{:  Clean Architecture, SOLID principles, Repository Pattern, and Dependency Inversion} \\
+   \textbf{Testing}{: xUnit, Moq, AutoFixture, Fluent Assertions, integration testing, and controller/repository mocking} \\ 
+    % \textbf{Web API}{: RESTful APIs, Swagger/OpenAPI, content negotiation, API versioning, JWT authentication, and refresh tokens}
+    \textbf{Security}{: ASP.NET Core Identity, role-based authorization, custom policies, HTTPS, and XSRF protection} \\
+    \textbf{Advanced topics}{: Filters pipeline, Serilog structured logging, exception handling middleware, Minimal APIs, CORS, and Angular integration}
+  \end{itemize}  \\
+
+
+    
  \end{itemize}
  \vspace{-16pt}
 %-----------PROJECTS-----------
@@ -176,21 +185,32 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-        {\textbf{CRUD App} $|$ \emph{ASP.NET MVC,EF Core,xUnit}}{}
+        {\textbf{Stocks Trading} $|$ \emph{ASP.NET MVC,EF Core,xUnit}}{}
           \resumeItemListStart
-            \resumeItem{TBD Later}
+                  \resumeItem{ Real-time stock data retrieval via HTTP Client from external APIs}
+                \resumeItem{ CRUD operations for managing stock orders}
+                \resumeItem{Configuration management using Options Pattern and Secrets Manager}
+                \resumeItem{Dependency injection with service lifetime management (Transient, Scoped, Singleton)}
+                \resumeItem{Unit-tested service and controller layers}
+                \resumeItem{Filter pipeline integration (Action, Result, Resource, Exception filters)}
+                 \resumeItem{Error handling middleware with custom exceptions}
           \resumeItemListEnd
-      
+          
         \resumeProjectHeading
-        {\textbf{Stocks App} $|$ \emph{ASP.NET MVC, EF Core, xUnit}}{}
+        {\textbf{Contact Manager} $|$ \emph{ASP.NET Core MVC, EF Core, SQL Server, xUnit, Moq, Serilog, Clean
+            Architecture}}{}
           \resumeItemListStart
-            \resumeItem{TBD Later}
+            \resumeItem{ Full CRUD operations for contacts and countries}
+            \resumeItem{ Search, sort, and filter functionality}
+            \resumeItem{ Entity Framework Core with SQL Server for data persistence}
+            \resumeItem{ Repository Pattern with Clean Architecture structure }
+            \resumeItem{Comprehensive unit and integration tests (xUnit, Moq, AutoFixture, Fluent Assertions)}
+            \resumeItem{ PDF, CSV, and Excel export functionality}
+            \resumeItem{ ASP.NET Core Identity with role-based authorization}     
           \resumeItemListEnd
           \vspace{-13pt}
     \resumeSubHeadingListEnd
 \vspace{-5pt}
-
-
 
 %-----------INVOLVEMENT---------------
 \section{Volunteering / Extracurricular}
