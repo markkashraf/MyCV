@@ -1,197 +1,98 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
+\pagestyle{empty}
 \urlstyle{same}
-
-\raggedbottom
 \raggedright
-\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure the generated PDF is machine readable / ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
+% Standard section headings with a rule
+\titleformat{\section}
+  {\large\scshape\raggedright}
+  {}{0em}
+  {}
+  [\vspace{-6pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Consistent, readable list spacing
+\setlist[itemize]{leftmargin=1.5em, itemsep=1pt, parsep=0pt, topsep=2pt, partopsep=0pt}
 
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    \textbf{\Huge \scshape Mark Ashraf William} \\ \vspace{1pt}
-    \small 01220674770 $|$ \href{mailto:x@x.com}{\underline{markkashraf3@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/markkashraf}{\underline{linkedin.com/in/markkashraf}} $|$
-    \href{https://github.com/markkashraf}{\underline{github.com/markkashraf}}
+    {\LARGE\bfseries Mark Ashraf William}\\[3pt]
+    \small
+    +20 122 067 4770 $\vert$
+    \href{mailto:markkashraf3@gmail.com}{markkashraf3@gmail.com} $\vert$
+    \href{https://linkedin.com/in/markkashraf}{linkedin.com/in/markkashraf} $\vert$
+    \href{https://github.com/markkashraf}{github.com/markkashraf} $\vert$
+    Cairo, Egypt
 \end{center}
 
+%----------SUMMARY----------
+\section{Summary}
+Software Engineer and .NET Developer with a Computer Engineering degree, building backend services and
+full-stack web applications with C\# and ASP.NET Core. Seeking a Backend or Full-Stack Software Engineer role.
 
-%-----------EDUCATION-----------
-\section{About}
-\begin{quote}
-Aspiring Software Engineer with strong CS foundation, currently looking for a Software engineering role as a backend/full stack Engineer with the flexibility to learn any tech stack.
-\end{quote}
-
-
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Ain Shams University}{Cairo, EG}
-      {Bachelor of Computer Engineering }{2019 - 2024}
-
-  \resumeSubHeadingListEnd
-
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Support Engineer}{Mar 2025 -- Present}
-      {IBM}{Cairo, EG}
-      \begin{quote}
-        Working with the Kroger Office and Distribution Team, supporting Kroger systems including the z/OS mainframe (CICS, VPS printing), Citrix (CDC/HDC architecture), Microsoft 365/Exchange, and Active Directory, using the ServiceNow ticketing system.
-      \end{quote}
-        \resumeSubHeadingListEnd
-
-
-\section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-        {\textbf{ \href{https://github.com/markkashraf/StocksAppProject}{Stocks Trading} }  $|$ \emph{C\#, ASP.NET MVC, EF Core,xUnit}}{}
-          \resumeItemListStart
-\resumeItem{Real-time stock data via Finnhub API, with full CRUD for stock orders}
-\resumeItem{Repository layer over Entity Framework Core/SQL Server, with a custom filter pipeline and error-handling middleware}
-\resumeItem{Configuration managed via Options Pattern and Secrets Manager
-Fully unit- and integration-tested with xUnit}
-          \resumeItemListEnd
-          
-        \resumeProjectHeading
-        {\textbf{\href{https://github.com/markkashraf/CRUD_Project}{Contact Manager}} $|$ \emph{C\#, ASP.NET Core MVC, Entity Framework Core, SQL Server, xUnit, Moq, Serilog, Clean Architecture}}{}
-          \resumeItemListStart
-\resumeItem{Full CRUD for contacts and countries, with LINQ-based search, sort, and filter}
-\resumeItem{Clean Architecture with Repository Pattern over EF Core/SQL Server}
-\resumeItem{Role-based authorization via ASP.NET Core Identity}
-\resumeItem{PDF, CSV, and Excel export functionality}
-\resumeItem{Comprehensive testing with xUnit, Moq, AutoFixture, and Fluent Assertions}     
-          \resumeItemListEnd
-          \vspace{-13pt}
-    \resumeSubHeadingListEnd
-\vspace{-5pt}
-
-
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
+%----------TECHNICAL SKILLS----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{BackEnd}{: C\#, ASP.NET Core (MVC, Web API), Entity Framework Core, LINQ, SQL Server, Database Design, Query Optimization } \\
-     \textbf{Other Technical Proficiencies}{: Embedded Systems, Linux, Git, REST APIs, Agile, Unit Testing (NUnit/xUnit), XML, JSON} \\
-    }}
+\textbf{Languages:} C\#, SQL, JavaScript, TypeScript, Python, C, C++, Java\\
+\textbf{Backend:} ASP.NET Core (MVC, Web API, Minimal APIs), Entity Framework Core, LINQ, REST APIs, Swagger/OpenAPI\\
+\textbf{Databases:} SQL Server, PostgreSQL, MySQL, MongoDB, Redis, Database Design, Stored Procedures, Query Optimization\\
+\textbf{Architecture and Testing:} Clean Architecture, SOLID Principles, Repository Pattern, Dependency Injection, xUnit, Moq\\
+\textbf{Security:} ASP.NET Core Identity, JWT, OAuth2/OIDC, Role-Based Authorization, HTTPS, XSRF Protection\\
+\textbf{DevOps and Cloud:} Docker, Kubernetes (AKS), Azure DevOps CI/CD, Azure Key Vault, RabbitMQ\\
+\textbf{Tools and Practices:} Git, Angular, Serilog, Agile/Scrum, Linux, JSON, XML
 
-    \textbf{Architecture \& design}{:  Clean Architecture, SOLID principles, Repository Pattern, and Dependency Inversion} \\
-   \textbf{Testing}{: xUnit, Moq, AutoFixture, Fluent Assertions, integration testing, and controller/repository mocking} \\ 
-    % \textbf{Web API}{: RESTful APIs, Swagger/OpenAPI, content negotiation, API versioning, JWT authentication, and refresh tokens}
-    \textbf{Security}{: ASP.NET Core Identity, role-based authorization, custom policies, HTTPS, and XSRF protection} \\
-    \textbf{Advanced topics}{: Filters pipeline, Serilog structured logging, exception handling middleware, Minimal APIs, CORS, and Angular integration}
-    \end{itemize}
+%----------EXPERIENCE----------
+\section{Experience}
+\textbf{Support Engineer} \hfill \textbf{Mar 2025 -- Present}\\
+IBM \hfill Cairo, Egypt
+\begin{itemize}
+  \item Support Kroger enterprise systems across z/OS mainframe (CICS, VPS printing), Citrix, Microsoft 365/Exchange, and Active Directory.
+  \item Triage and resolve incidents in ServiceNow, working with cross-functional teams to meet service-level targets.
+\end{itemize}
 
-%-------------------------------------------
+%----------PROJECTS----------
+\section{Projects}
+
+\textbf{\href{https://github.com/markkashraf/eCommerceWithMicroservices}{eCommerce Microservices Platform}} $\vert$ ASP.NET Core, Docker, Kubernetes, RabbitMQ, Redis, Azure DevOps
+\begin{itemize}
+  \item Built an eCommerce platform as independent Users, Products, and Orders microservices in ASP.NET Core.
+  \item Used PostgreSQL, MySQL, and MongoDB per service, with Clean Architecture and FluentValidation.
+  \item Containerized services with Docker and orchestrated them on Azure Kubernetes Service (AKS).
+  \item Added Polly fault tolerance, Redis caching, RabbitMQ messaging, and an Ocelot gateway with Entra ID B2C.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{\href{https://github.com/markkashraf/Blog}{Blog Platform}} $\vert$ C\#, ASP.NET Core Web API, Angular, EF Core, JWT
+\begin{itemize}
+  \item Developed a full-stack blog with an ASP.NET Core Web API backend and an Angular frontend.
+  \item Implemented CRUD for posts and categories with EF Core relationships, image upload, and file serving.
+  \item Secured it with JWT authentication, role-based authorization, and an Angular auth guard.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{\href{https://github.com/markkashraf/StocksAppProject}{Stocks Trading Application}} $\vert$ C\#, ASP.NET Core MVC, EF Core, SQL Server, xUnit
+\begin{itemize}
+  \item Integrated real-time market data through the Finnhub API with full CRUD for stock orders.
+  \item Built a repository layer over EF Core and SQL Server with a custom filter pipeline and middleware.
+  \item Wrote unit and integration tests with xUnit; configured via the Options Pattern and Secrets Manager.
+\end{itemize}
+
+%----------EDUCATION----------
+\section{Education}
+\textbf{Ain Shams University} \hfill \textbf{2019 -- 2024}\\
+Bachelor of Computer Engineering \hfill Cairo, Egypt\\
+Graduation Project (Grade: A), sponsored by CyTwin Lab: golf car digital twin over Ethernet, WiFi, and CAN.
+
 \end{document}
